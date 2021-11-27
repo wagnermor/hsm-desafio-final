@@ -69,6 +69,10 @@ form input {
   width: 50%;
 }
 
+form select {
+  width: 30%;
+}
+
 form input[type="submit"]{
   background-color: #888;
   color: #fff;
