@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HSM - Desafio final</title>
+  <link rel="stylesheet" href="../style/globalStyle.css">
+</head>
+<body>
+  <header class="display_flex header_box">
+    <div class="logo">EducaçãoFinanceira</div>
+    <nav>
+      <ul class="display_flex">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./criar.html">Criar curso</a></li>
+        <li><a href="./exibir.html">Exibir curso</a></li>
+        <li><a href="./atualizar.html">Atualizar curso</a></li>
+        <li><a href="./deletar.html">Deletar curso</a></li>
+        <li><a href="./listar.html">Lista de cursos</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="display_flex">
+    <article id="exibir_curso" class="display_flex content">
+      <section>
+        <h1>Exibir curso</h1>
+        <p>Para exibir um curso, basta digitar o número de id no formulário e clicar em exibir.</p>
+        <form action="#" method="get">
+          <label for="id_exibe_curso">id do curso:</label>
+          <input type="text" id="id_exibe_curso" name="id_curso" required>
+          <input type="submit" value="Exibir">
+        </form>
+      </section>
+    </article>
+  </main>
+</body>
+</html>
