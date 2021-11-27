@@ -1,8 +1,8 @@
 const fs = require('fs');
-const CreateObj = require('./createObj');
+// const CreateObj = require('./createObj');
 
-const teste = [];
-const id = () => teste.length === 0 ? 1 : teste.length + 1;
+// const teste = [];
+// const id = () => teste.length === 0 ? 1 : teste.length + 1;
 
 const powerPoint = new CreateObj(
   id(),
