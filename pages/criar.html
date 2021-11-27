@@ -26,6 +26,8 @@
         <h1>Criar um novo curso</h1>
         <p>Para criar um novo curso, basta digitar todas informações do formulário e clicar em criar.</p>
         <form action="#" method="get">
+          <label for="id_cria_curso">id do curso:</label>
+          <input type="number" id="id_cria_curso" name="id_curso" min="1" max="3" required>
           <label for="titulo_cria_curso">Título do curso:</label>
           <input type="text" id="titulo_cria_curso" name="titulo" required>
           <label for="descricao_cria_curso">Descrição do curso:</label>
@@ -36,11 +38,12 @@
           <input type="text" id="nome_professor_cria_curso" name="professor" required>
           <label for="nome_professor_cria_curso">Lista de aulas:</label>
           <input type="text" id="lista_cria_curso" name="lista" required>
-          <input type="submit" value="Criar">
+          <input type="submit" id="criar" value="Criar">
         </form>
 
       </section>
     </article>
   </main>
+  <script src="../js/index.js"></script>
 </body>
 </html>
