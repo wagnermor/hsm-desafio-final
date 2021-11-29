@@ -96,8 +96,6 @@ const deletarCurso = (id) => {
 //Função listaCursos
 const listaCursos = () => {
   const curso = JSON.parse(readData());
-  // console.log('foi');
-  // console.log(cursos);
   for(let i = 0; i < curso.length; i++) {
     console.log(`\n
       Código do curso: ${curso[i]['id']}
