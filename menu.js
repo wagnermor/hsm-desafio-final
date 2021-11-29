@@ -6,7 +6,8 @@ const {
   criarCurso,
   exibirCurso,
   atualizarCurso,
-  deletarCurso
+  deletarCurso,
+  listaCursos,
 } = require('./crud');
 
 const menu = () => {
@@ -73,8 +74,12 @@ const atualizar_menu = () => {
 const deletar_menu = () => {
   const id = readline.question('Digite um código para o curso: ');
   deletarCurso(id);
+  menu();
 }
-const listar_menu = () => listar();
+const listar_menu = () => {
+  listaCursos();
+  menu();
+}
 
 module.exports = {
   menu: menu,
