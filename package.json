@@ -1,0 +1,14 @@
+{
+  "name": "hsm-desafio-final",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": "git@github.com:wagnermor/hsm-desafio-final.git",
+  "author": "WagnerMor <wagnermor@outlook.com>",
+  "license": "MIT",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}

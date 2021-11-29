@@ -7,19 +7,20 @@ function Curso(id, titulo, descricao, pathImg, nomeProfessor, linkAula) {
   this.linkAula = linkAula;
 }
 const CreateCurso = (
-  id,
-  titulo,
-  descricao,
-  pathImg,
-  nomeProfessor,
+  id = '',
+  titulo = '',
+  descricao = '',
+  pathImg = '',
+  nomeProfessor = '',
   linkAula = ''
   ) => {
-    new Curso(
-    id,
-    titulo,
-    descricao,
-    pathImg,
-    nomeProfessor,
-    linkAula
-  )};
+    return new Curso(
+      id,
+      titulo,
+      descricao,
+      pathImg,
+      nomeProfessor,
+      linkAula
+    )
+};
 module.exports = CreateCurso;
