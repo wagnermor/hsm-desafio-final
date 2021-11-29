@@ -31,11 +31,8 @@ const criarCurso = (
 //Função exibirCurso
 const exibirCurso = (id) => {
   const curso = JSON.parse(readData());
+  let verifica = false;
   for(let i = 0; i < curso.length; i++) {
-    if (curso.length <= 0) {
-      console.log('Não há cursos cadastrados');
-    }
-    
     if (curso[i]['id'] === id) {
       console.log(`\n
       Código do curso: ${curso[i]['id']}
@@ -44,7 +41,11 @@ const exibirCurso = (id) => {
       Endereço da imgem do curso: ${curso[i]['pathImg']}
       Nome do professor: ${curso[i]['nomeProfessor']}
       Link da aula: ${curso[i]['linkAula']}\n`);
+      verifica = true;
     } 
+  }
+  if (!verifica) {
+    console.log('\nCurso não cadastrado\n');
   }
 }
 
