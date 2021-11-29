@@ -16,14 +16,6 @@
     "linkAula": ""
   },
   {
-    "id": "3",
-    "titulo": "Javascript",
-    "descricao": "Programaçao",
-    "pathImg": "Nonononono",
-    "nomeProfessor": "Artebaldo Romanis",
-    "linkAula": "lll"
-  },
-  {
     "id": "4",
     "titulo": "SQL",
     "descricao": "SGBD MySQL",

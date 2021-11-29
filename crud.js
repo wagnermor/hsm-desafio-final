@@ -13,8 +13,8 @@ const writeData = (data) => {
   }
 }
 
-//Função criar
-const criar = (
+//Função criarCurso
+const criarCurso = (
   id,
   titulo,
   descricao,
@@ -28,8 +28,8 @@ const criar = (
   return writeData(curso);
 }
 
-//Função exibir
-const exibir = (id) => {
+//Função exibirCurso
+const exibirCurso = (id) => {
   const curso = JSON.parse(readData());
   console.log(curso.length);
   for(let i = 0; i < curso.length; i++) {
@@ -51,8 +51,8 @@ const exibir = (id) => {
   }
 }
 
-//Função atualizar
-const atualizar = (
+//Função atualizarCurso
+const atualizarCurso = (
   id,
   titulo,
   descricao,
@@ -79,9 +79,26 @@ const atualizar = (
   }
 }
 
+//Função deletarCurso
+const deletarCurso = (id) => {
+  const curso = JSON.parse(readData());
+  for(let i = 0; i < curso.length; i++) {
+    if(curso[i]['id'] === id) {
+      curso.splice(i,1);
+      
+    }
+  }
+  try {
+    fs.writeFileSync('./data/cursos.json', JSON.stringify(curso, null, 2), 'utf-8');
+  } catch (e) {
+    console.log(e);
+  }
+}
+
 module.exports = {
   startData: startData,
-  criar: criar,
-  exibir: exibir,
-  atualizar: atualizar,
+  criarCurso: criarCurso,
+  exibirCurso: exibirCurso,
+  atualizarCurso: atualizarCurso,
+  deletarCurso: deletarCurso,
 }

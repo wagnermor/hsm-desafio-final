@@ -3,9 +3,10 @@ const { clear } = require('console');
 
 const {
   startData,
-  criar,
-  exibir,
-  atualizar,
+  criarCurso,
+  exibirCurso,
+  atualizarCurso,
+  deletarCurso
 } = require('./crud');
 
 const menu = () => {
@@ -49,13 +50,13 @@ const criar_menu = () => {
   const img = readline.question('Digite o link de uma imagem para o curso: ');
   const nomeProfessor = readline.question('Digite o nome do professor do curso: ');
   const linkAula = readline.question('Digite um link para aula do curso: ');
-  criar(id, titulo, descricao, img, nomeProfessor, linkAula);
+  criarCurso(id, titulo, descricao, img, nomeProfessor, linkAula);
   menu();
 }
 
 const exibir_menu = () => {
   const id = readline.question('Digite um código para o curso: ');
-  exibir(id);
+  exibirCurso(id);
   
   menu();
 }
@@ -66,10 +67,13 @@ const atualizar_menu = () => {
   const img = readline.question('Digite o link de uma imagem para o curso: ');
   const nomeProfessor = readline.question('Digite o nome do professor do curso: ');
   const linkAula = readline.question('Digite um link para aula do curso: ');
-  atualizar(id, titulo, descricao, img, nomeProfessor, linkAula);
+  atualizarCurso(id, titulo, descricao, img, nomeProfessor, linkAula);
   menu();
 }
-const deletar_menu = () => deletar();
+const deletar_menu = () => {
+  const id = readline.question('Digite um código para o curso: ');
+  deletarCurso(id);
+}
 const listar_menu = () => listar();
 
 module.exports = {
