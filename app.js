@@ -43,7 +43,6 @@ const listar = () => {
   console.log('função listar');
   return;
 }
-// console.log(CreateCurso());
 
 const menu = () => {
   console.log(`****** SISTEMA DE GERENCIAMENTO DE CURSOS ******`);

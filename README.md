@@ -1,2 +1,9 @@
 # HSM - desafio final
-https://wagnermor.github.io/hsm-desafio-final/
+Para iniciar o projeto abra odiretório principal e execute os comandos:
+```bash
+yarn
+```
+```bash
+npm start
+```
+
